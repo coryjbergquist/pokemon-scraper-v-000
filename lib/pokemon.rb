@@ -16,6 +16,7 @@ class Pokemon
   end
 
   def self.find(id, name)
+    binding.pry
     db.execute( "SELECT name FROM pokemon WHEN pokemon.id = id" )
   end
 
