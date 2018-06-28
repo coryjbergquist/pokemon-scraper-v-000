@@ -16,7 +16,7 @@ class Pokemon
   end
 
   def self.find(id, db)
-    db.execute( "SELECT name FROM pokemon ORDER BY name" )
+    db.execute( "SELECT name FROM pokemon WHERE id = (?)," id )
   end
 
 
