@@ -23,7 +23,6 @@ class Pokemon
   
     new_pokemon = db.execute( "SELECT * FROM pokemon WHERE id = (?)", id )
     george = Pokemon.new(id: new_pokemon.flatten[0], name: new_pokemon.flatten[1], type: new_pokemon.flatten[2], db: db, hp: new_pokemon.flatten[3])
-binding.pry
   end
 
 
