@@ -12,6 +12,7 @@ class Pokemon
 
 
   def self.save(name, type, db)
+    binding.pry
     "INSERT INTO pokemon (name, type, db) VALUES (name, type, db)"
   end
 
