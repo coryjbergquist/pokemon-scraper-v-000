@@ -4,6 +4,7 @@ class Pokemon
 
   def initialize(id:, name:, type:, db:)
     @id = id
+    binding.pry
   end
 
   def self.all
