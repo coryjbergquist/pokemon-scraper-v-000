@@ -11,9 +11,9 @@ class Pokemon
   end
 
 
-  def self.save(id, name, type)
+  def self.save( name, type, id)
 binding.pry
-    db.execute( "INSERT INTO pokemon ( name, type, db ) VALUES ( ?, ?, ? )", [name, type, db])
+    db.execute( "INSERT INTO pokemon ( name, type, id ) VALUES ( ?, ?, ? )", [name, type, id])
   end
 
 
