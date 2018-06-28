@@ -3,7 +3,7 @@ class Pokemon
   attr_accessor :name, :type, :db, :id
 
   def initialize(id:, name:, type:, db:)
-    binding.pry
+    @id = id
   end
 
   def self.all
