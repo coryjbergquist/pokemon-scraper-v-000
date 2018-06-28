@@ -18,7 +18,7 @@ class Pokemon
   def self.find(id, db)
     new_pokemon = db.execute( "SELECT * FROM pokemon WHERE id = (?)", id )
     newer = new_pokemon.flatten
-    george = Pokemon.new(1, "pika", "electric", "idk")
+    george = Pokemon.new(id: 1, name: "pika", type: "electric", db: "idk")
     binding.pry
   end
 
