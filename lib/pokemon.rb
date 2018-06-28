@@ -16,7 +16,7 @@ class Pokemon
     binding.pry
     ins.execute
 
-  db.execute( "INSERT INTO pokemon ( name, type, db) VALUES ( ?, ?, ? )", [name, type, db])
+  #db.execute( "INSERT INTO pokemon ( name, type, db) VALUES ( ?, ?, ? )", [name, type, db])
   end
 
 
