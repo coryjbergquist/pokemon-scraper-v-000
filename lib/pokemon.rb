@@ -12,7 +12,6 @@ class Pokemon
 
 
   def self.save( name, type, id)
-binding.pry
     db.execute( "INSERT INTO pokemon ( name, type, id ) VALUES ( ?, ?, ? )", [name, type, id])
   end
 
